@@ -1,7 +1,8 @@
 CMPUT404-assignment-websockets
 
-IMPORTANT: the freetest.py file does NOT kill gunicorn processes once it is done. to clear them, run ps -A, then sudo kill the gunicorn processes.
 ==============================
+
+Important: the freetest.py file does NOT kill gunicorn processes once it is done. to clear them, run ps -A, then sudo kill the gunicorn processes.
 
 CMPUT404-assignment-websockets
 
