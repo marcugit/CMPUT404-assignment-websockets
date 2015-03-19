@@ -242,6 +242,12 @@
                      }
                      return color;
                  }
+        
+        
+                function getRandomInt(min, max) {
+                     return Math.floor(Math.random() * (max - min + 1)) + min;
+                }
+        
                  
                  // Add the application specific mouse listeners!
                  //XXX: TODO Make these prettier!
@@ -300,7 +306,7 @@
             socket = new WebSocket(url);
             socket.onopen = function() {
                 //XXX: TODO What are you going to do here?
-                //should do something else!!
+                //This does nothing!! should do something else!!
                 get_url = host+"/world";
                 sendJSONGETRequest(get_url, drawFrame);
                 
