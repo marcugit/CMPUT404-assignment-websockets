@@ -273,24 +273,24 @@
         
         
         
-        function sendJSONGETRequest(url, callback) {
-            var xhr = new XMLHttpRequest();
+        //function sendJSONGETRequest(url, callback) {
+          //  var xhr = new XMLHttpRequest();
             
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState==4) {
-                    try {
-                        if (xhr.status==200) {
+            //xhr.onreadystatechange = function () {
+              //  if (xhr.readyState==4) {
+                //    try {
+                  //      if (xhr.status==200) {
                             
-                            world = JSON.parse(xhr.responseText);
+                    //        world = JSON.parse(xhr.responseText);
                         
-                            callback();
-                        }
-                    }
-                    catch(e) {
-                        alert('Error: ' + e.name);
-                    }
-                }
-            };
+                      //      callback();
+                        //}
+                    //}
+                //    catch(e) {
+                  //      alert('Error: ' + e.name);
+                    //}
+            //    }
+            //};
             
             xhr.open('GET', url);
             xhr.send();
@@ -307,11 +307,11 @@
             socket.onopen = function() {
                 //XXX: TODO What are you going to do here?
                 //This does nothing!! should do something else!!
-                get_url = host+"/world";
-                sendJSONGETRequest(get_url, drawFrame);
+                //get_url = host+"/world";
+                //sendJSONGETRequest(get_url, drawFrame);
                 
-                drawNextFrame();
-                drawFrame();
+                //drawNextFrame();
+                //drawFrame();
         
             };
             socket.onerror = function(msg) {
